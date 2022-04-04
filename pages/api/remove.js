@@ -16,7 +16,6 @@ export default async (req, res) => {
     return fetch(url)
         .then(r => r.json())
         .then(data => {
-            console.log("res2:", data)
             let result = JSON.stringify(data.result)
             return res.status(200).json(result)
         })
