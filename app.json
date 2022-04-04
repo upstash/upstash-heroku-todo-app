@@ -1,0 +1,15 @@
+{
+    "name": "To-Do App with NextJS",
+    "description": "Minimalistic To-do app/",
+    "repository": "https://github.com/yilmaz-burak/deploy-heroku",
+    "env": {
+        "UPSTASH_REDIS_REST_URL": {
+          "description": "rest url for redis db.",
+          "value": "https://eu1-ace-bison-36183.upstash.io"
+        },
+        "UPSTASH_REDIS_REST_TOKEN": {
+          "description": "token for redis db.",
+          "value": "AY1XACQgNWYwMDg5NmUtMjNmZi00ZDg0LTg0NmMtMmM4Y2YyOWJmYjIwY2M2YzVkOGQ0ZTQ4NGM4Mzk0MDFhYzBhOTQxM2FhMjk="
+        }
+      }
+  }
