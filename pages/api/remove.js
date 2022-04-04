@@ -4,12 +4,19 @@ export default async (req, res) => {
     }
     let todo = encodeURI(req.query.todo)
 
-    const token = "REPLACE_YOUR_TOKEN";
-    const url = "https://REPLACE_YOUR_ENDPOINT/lrem/todo/1/" + todo + "?_token=" + token;
+
+    const endpoint = process.env.UPSTASH_REDIS_REST_URL
+    const token = process.env.UPSTASH_REDIS_REST_TOKEN
+
+    const url = `${endpoint}/lrem/todo/1/${todo}?_token=${token}`
+
+    // const token = "REPLACE_YOUR_TOKEN";
+    // const url = "https://REPLACE_YOUR_ENDPOINT/lrem/todo/1/" + todo + "?_token=" + token;
 
     return fetch(url)
         .then(r => r.json())
         .then(data => {
+            console.log("res2:", data)
             let result = JSON.stringify(data.result)
             return res.status(200).json(result)
         })
