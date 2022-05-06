@@ -5,7 +5,7 @@
   "addons": [
     {
       "plan": "upstash-redis",
-      "as": "UPSTASH_REDIS_DATABASE"
+      "as": "UPSTASH_REDIS"
     }
   ]
 }
