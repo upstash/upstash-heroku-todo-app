@@ -1,7 +1,7 @@
 {
   "name": "To-Do App with NextJS",
   "description": "Minimalistic To-do app/",
-  "repository": "https://github.com/yilmaz-burak/deploy-heroku",
+  "repository": "https://github.com/upstash/upstash-heroku-todo-app",
   "addons": [
     {
       "plan": "upstash-redis",
